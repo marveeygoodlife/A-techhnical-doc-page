@@ -1,0 +1,7 @@
+@media screen and (min-width: 65em) {
+    h1 {
+        color: black;
+        text-shadow: .1em .1em .2em red;
+    font-family: 'Lobster', cursive;
+    }
+   }
