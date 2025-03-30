@@ -35,6 +35,7 @@ body {
     background-color: var(--backgroundColor);
     color: var(--text);
      scroll-behavior: smooth;
+     text-align: center;
 }
 
 body.dark-mode {
@@ -348,6 +349,16 @@ input:focus {
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 65em) {
+    
+body {  
+    display: grid;
+    grid: [header-start] "header header header" 100px[content-start]  "main main main" 400px[footer-start] "footer footer footer" 100px
+    / [main-content] 1fr;
+    gap: 20px;
+}
+header {
+    grid-area: header;
+}
 /* Navigation style */     
 nav {
     position: fixed;
@@ -410,7 +421,7 @@ nav {
         align-items: center;
     }
     /* footer style  */
-    footer { 
+    footer { grid-area: footer;
            padding: 30px 10px 0 10px;
       }
       div.author-div {
@@ -426,5 +437,7 @@ nav {
         align-items:flex-end;
          padding: 0;
        }
-
+main {
+    grid-area: main;
+}
    }
