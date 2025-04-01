@@ -217,6 +217,9 @@ h1, h2, h3 {
 h1 { text-shadow: -.1em -.1em #bad9fa;
     font: oblique bold small-caps 1.5em/1.8em Verdana, sans-serif;
 }
+h1.mainh1 {
+    color: black;
+}
 h2 { 
     font: bold  1.75em/1.2 sans-serif;
  }
@@ -350,9 +353,15 @@ input:focus {
     border: 2px solid maroon;
 }
 /* form style end*/
+
 /* sidebar style */
+
 .sidebar-right, .sidebar-left {
     display: none;
+}
+ul .doc-list-items {
+    border: 2px solid red;
+
 }
 #aside-links {
     grid-area: sidebar;
@@ -485,9 +494,8 @@ ul li.doc-item {
     list-style-type: none;
     display: block;
     margin: .5em .5em .3em .5em ;
-    background-color: #333;
-    height: 50px;
-    color: white;
+     height: 50px;
+    color: black;
     transition: all .3s linear;
 }
 ul li.doc-item:hover {
@@ -496,7 +504,7 @@ ul li.doc-item:hover {
 
 }
 .doc-item .doc-link {
-    color: white;
+    color: black;
 }
 /* Buttons style  */
   .btn-div {

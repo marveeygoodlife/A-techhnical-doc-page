@@ -3,7 +3,19 @@
 const togglebutton = document.querySelector(".togglebutton");
 const navbar = document.querySelector(".navbar");
 const closeBtn = document.querySelector(".closeBtn");
+const darkmode = document.querySelector(".togglebtn")
+const docbody = document.body;
 
+
+darkmode.addEventListener("click", ()=>{
+    if (darkmode.classList.contains("dark-mode")) {
+        docbody.classList. ("dark-mode");
+    } else {
+        docbody.classList.add("dark-mode");
+
+    }
+
+})
 
 togglebutton.addEventListener("click", () => {
 
