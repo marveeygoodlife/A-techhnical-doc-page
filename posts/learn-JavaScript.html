@@ -1,16 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-    <main>
-        <h1>JavaScript!
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is am HTML blog post">
+        <meta name="author" content="Marveey Goodlife">
+        <link rel="stylesheet" href="/style.css">
+        <title>HTML for Beginners</title>  
+    </head>
+    <body>
+    <!--HEADER SECTION-->
+<header class="main-header">
+    <div>
+    <div class="logo-div">
+        <p>My Tech Blog</p>
+    <!-- <img src="" alt="MY-LOGO" class="logo">
+     -->
+    </div>
+    </div>
+    <!-- navbar -->
+    <nav class="navbar mainNav">
+    <div>
+    <button type="button" class="closeBtn"> x </button>
+    </div>
+    
+<!--NAV-LINKS-->
+<ul class="navul">
+    <li class="navli">
+    <a href="/index.html" class="navlinks">home</a>
+    </li>
+    <li class="navli">
+    <a href="/about.html" class="navlinks">about</a>
+    </li>
+    <li class="navli">
+    <a href="/posts/learn-HTML.html" class="navlinks">blog</a>
+    </li>
+    <li class="navli">
+    <a href="/contact.html" class="navlinks">contact</a>
+    </li>
+    </ul>
+    </nav><!-- open menu button -->
+<div class="btn-div">
+    <button type="button" class="togglebutton"><span class="bars"></span>
+        <span class="bars"></span>
+        <span class="bars"></span></button>
+    </div>
+    </header>
+
+
+    <div class="main-wrapper">
+        <div class="sidebar-container">
+            <aside id="aside-links" class="sidebar-left" aria-label="left-aside">
+                <nav aria-label="Quick Guides" class="sidebar-nav">
+                    <div class="inner-aside-left">
+                            <div class="document-links-container">
+                                <section class="document-section">
+                                    <header class="aside-header">
+                                        <h2>Quick Guides</h2>
+                                    </header>
+                                    <ul class="doc-list-items">
+                                        <li class="doc-item"><a   class="doc-link" href="#">item 1</a></li>
+                                        <li class="doc-item"><a   class="doc-link" href="#">item 2</a></li>
+                                        <li class="doc-item"><a   class="doc-link" href="#">item 3</a></li>
+                                        <li class="doc-item"><a   class="doc-link" href="#">item 4</a></li>
+                                        <li class="doc-item"><a   class="doc-link" href="#">item 5</a></li>
+                                        <li class="doc-item"><a   class="doc-link" href="#">item 6</a></li>
+                                    </ul>
+                                </section>
+                            </div>
+                    </div>
+                </nav>
+            </aside>
+        </div>
+      <!-- =========
+       Main Content
+      =============-->
+      <main class="main">
+        <h1 class="mainh1">JAVASCRIPT FOR BEGINNERS: Making the website Interactive
         </h1>
+        <!-- First section -->
+        <section class="sectionA">
+            <h2>Introduction</h2>
+            <article>
+                <p>
+                    If you've ever wondered how websites are built, the answer starts with <strong>HTML (HyperText Markup Language)</strong>.Every website you see- whether it's a blog, an online store or a social media site- relies on HTML for it's structure.
+                </p>
+                <p>
+                    But what exactly is HTML, and how does it work?, In this guide we will break it down into a simple beginner-friendly way. By the end you will not only understand HTML but also write your own first webpage!
+                </p>
+            </article>
+        </section>
+        <!-- second  section -->
+        <hr>
+        <section>
+            <h2>
+                What is HTML?
+            </h2>
+            <article>
+                <p>
+                    HTML is not a programming language. <br> Its a Markup Language that tells the browser how to display texs contents. Think of it like a <strong>website blueprints-</strong>it structures text, images, videos, and links so they appear correctly on the screen.
+                </p>
+            </article>
+            <article>
+                <h2>Example of HTML in action</h2>
+                <p>
+                    When you visit a webpage, the browser reads an HTML document behind the scenes- this website is written with HTML. Here's a basic example:
+                </p>
+                <!-- Add simple code snipet of html document. --> 
+                 <!-- <img src="" alt="">-->
+                  <p>
+                    This simple HTML document contains a heading, paragraph, and a link. It may not look exciting yet, but it's the foundation of every website online today!
+                  </p>
+                  <h2 class="smallh2">Hands-on challenge #1</h2>
+                  <p>
+                    <strong>Try this:</strong> Open a text editor (like VS Code or Notepad), type out a basic HTML structure, save it as index.html, and open it on your browser. You've just created your first webpage!
+                  </p>
+            </article>
+        </section>
+        <hr>
+        <!-- Third section -->
+        <section>
+            <h2>The Building Blocks of HTML</h2>
+            <article>
+                <p>
+                HTML is made up of <strong>elements,</strong> which are small pieces of code enclosed in <strong>angle brackets</strong> (&lt; &gt;). Let's take a look at some of the most used ones:
+                </p>
+                <h2 class="smallh2">1. Headings (&lt;h1&gt; - &lt;h6&gt;)</h2>
+                <p>
+                    Headings help to structure your content.<br> &lth1&gt; is the largest heading and most important, and &lt;h6&gt; is the least important and smallest.
+                </p>
+                <p><strong>Example:</strong> </p>
+                    <!-- insert code snippet showing different heading levels -->
+                     <!-- <div><img src=" " alt=""></div> -->
+            <article>
+                <h2 class="smallh2">2. Paragraphs (&lt;p&gt;)</h2>
+                <p>
+                    Paragraph is used to write text contents; this text is a paragraph!
+                </p>
+
+                <h2 class="smallh2">3. Links (&lt;a&gt;)</h2>
+                <p>
+                    Hyperlinks are used to connect one webpage to another, think of it like a spider web.
+                </p>
+
+                <h2 class="smallh2">4. images (&lt;img&gt;)</h2>
+                <p>
+                    Used to display pictures on the website.
+                </p>
+            </article>
+            <h2 class="smallh2">Hands-on Challenge #2</h2>
+            <p>
+                Try creating a webpage with headings, paragraph, image and link it to another website!
+            </p>
+            <hr>
+            </article>
+        </section>
+         <!-- Fourth section -->
+        <section>
+            <h2>understanding HTML STRUCTURE</h2>
+            <article>
+                <p>
+                    Every HTML document follow a simple <strong>hierachy:</strong>
+                </p>
+                <ol>
+                    <li>
+                        <strong>The !DOCTYPE Declaration - </strong> Tells the browser it's an HTML5 document.
+                    </li>
+                    <li>
+                        <strong>The &lt;html&gt; Element - </strong> Is the root of the document.
+                    </li>
+                    <li>
+                        <strong>The &lt;headgt;section - </strong> Contains the page metadata such as the title and css link.
+                    </li>
+                    <li>
+                        <strong>The &lt;body&gt; Section -</strong> Holds every other contents of the page.
+                    </li>
+                </ol>
+                <p><strong>Example of a full HTML Document:</strong></p>
+
+                <!-- Include a clean well structured example of HTML page -->
+                 <!-- <div><img src="" alt=""></div> -->
+                  <p>Now let's break this down:</p> <br>
+                  <ul>
+                    <li>The &lt;head&gt; section contains the title (which appears on your browser tab), links to css, charset, author and other description as well as the viewport.
+                    </li>
+                    <li>
+                        The &lt;body&gt; section contains everything visible on the page.
+                    </li>
+                    <li>The &lt;footer&gt; contain the copyright and other links to social media pages.</li>
+                  </ul>
+            </article>
+        </section>
+          <hr>
+          <!-- Fifth section -->
+        <section>
+         <h2>HTML Tags and Attributes</h2>
+         <article>
+                <p>
+                    HTML have Attributes, which provide extra information about them.
+                </p>
+                <p>
+                    <strong>Example:</strong>
+                </p>
+                <p>
+                    An image tag with an alternative (for accessibility):
+                </p>
+                <!-- insert example of img tag with alt attribute -->
+                 <!-- <div>
+                    <img src="" alt="">
+                 </div> -->
+                 <p>
+                    Common attributes includes:
+                 </p>
+                 <ul>
+                    <li>hyperText-reference(href) for links
+                    </li>
+                    <li>src (for images)</li>
+                    <li>id and class (for for styling with <a href="/posts/learn-CSS.html">CSS</a>)</li>
+                 </ul>
+                 <h2 class="smallh2">Hands-on Challenge #3</h2>
+                 <p>Create an image element with an alt description. Then add a clickable link that takes users to your favourite website!</p>
+         </article>
+        </section>
+        <hr>
+        <!-- sixth section -->
+         <section>
+            <h2>Forms and User Input in HTML</h2>
+            <article>
+                <p>
+                    Forms allows user to <strong>interact</strong> with a webpage by entering information.
+                </p>
+                <p>
+                    <strong>
+                        Basic Form Elements:</strong>
+                </p>
+                <ul>
+                    <li>
+                        &lt;input&gt; (for text fields, checkboxes, radio buttons)
+                    </li>
+                    <li>
+                        &lt;label&gt; (to describe inputs)
+                    </li>
+                    <li>
+                        &lt;button&gt; (to submit data)
+                    </li>
+                </ul>
+                <p>
+                    <strong>Example:</strong> 
+                    <br> <br>
+                    A simple form where users can enter their name and submit it.
+                    <!-- add form example -->
+                </p>
+                <h2 class="smallh2">Hands-on Challenge #4:</h2>
+                <p>
+                    Try building a basic contact form with fields for name, email, and a message.
+                </p>
+            </article>
+         </section>
+         <hr>
+         <!-- seventh section -->
+          <section>
+            <h2>HTML5: The Modern HTML Standard</h2>
+            <article>
+                <p>
+                    HTML5 introduced <strong>new and improved features,</strong> including   
+                </p>
+                <ul>
+                    <li>
+                        <strong>Semantic Element:</strong> (&lt;header&gt;, &lt;article&gt;,&lt;aside&gt;) for better page structure.
+                    </li>
+                    <li>
+                        <strong>Multimedia Support</strong> with &lt;audio&gt; and &lt;video&gt; tags.
+                    </li>
+                    <li>
+                        <strong>Local Storage</strong> for saving data on the user's device.
+                    </li>
+                </ul>
+                <p>
+                    <strong>Example:</strong>
+                    <br>
+                    An HTML5 video tag embedding a video 
+                </p>
+<!--<div>Insert an HTML5 Video</div>
+ -->            </article>
+             <h2 class="smallh2">Hands-on Challenge #5</h2>
+             <p>
+                Try adding an audio file or a video to your webpage!
+             </p>
+          </section>
+          <hr>
+          <!-- Eight section -->
+           <section>
+            <h3>Frequently Asked Questions (FAQ)</h3>
+            <ol>
+                <li>
+                    <strong>Do I need special software to write HTML?</strong> 
+                    <br>
+                    <p>
+                        No, you just need a text editor like (VS Code, sublime text or Notepad)
+                    </p>
+                <li>
+                    <strong>Is HTML Case-sensitive?</strong> <br>
+                    <p>
+                        No, but it's a good practice to write with lowercase.
+                    </p>
+                <li>
+                    <strong>Can HTML work without CSS and JavaScript?</strong> <br>
+                    <p>
+                        Yes! HTML works just fine alone, but it won't look nice without CSS or be interactive without <a href="/posts/learn-JavaScript.html">JavaScript</a>.
+                    </p>
+                </li>
+            </ol>
+           </section>
+           <hr>
+                     <!-- ningth section -->
+
+           <section>
+              <h3>Next Steps and Learning Resources</h3>
+             <article>
+                <p>
+                    Now that you understand and have a strong foundation in HTML, here's what to do next:
+                </p>
+                <ol>
+                    <li>
+                        <strong>Practice:</strong><p>Build a simple webpages with, images, links,headings, text and video e.t.c</p>
+                    </li>
+                    <li>
+                        <strong>Explore CSS:</strong><p>
+                            Learn how to style your webpage and make it look beautiful to your user.
+                              <a href="/posts/learn-CSS.html">here</a> to start.
+                        </p>
+                    </li>
+                    <li><strong>Check out these resources:</strong></li>
+                </ol>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">MDN Web Docs</a></li>
+                    <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">W3school HTML Tutorials</a></li>
+<!--                     <li><a href=""></a></li>
+ -->                </ul>
+            </article>
+           </section>
+           <hr>
+           <!-- Tenth Section -->
+            <section>
+                <h2>Conclusion</h2>
+                <article>
+                    <p>
+                        HTML is the foundation of every website. <br> By mastering it, you're taking the first step towards becoming a web developer. The best way to learn is by building things, so start experiencing with examples and challenges in this guide.
+                    </p>
+                    <p>
+                        <strong>What next?</strong> In the next post, we'll dive into <a href="/posts/learn-CSS.html">CSS</a> and learn how to make your HTML page look amazing!
+                    </p>
+                </article>
+            </section>
     </main>
+
+    <!-- sidebar - right- docs -->
+            
+    <aside id="docs" class="sidebar-right">
+        <nav>
+            <div class="document links-container">
+                <header class="aside-header">
+                    <h2>More Article</h2>
+                </header>
+                <ul class="doc-quicklinks">
+                    <li class="doc-item">
+                        <a href="/posts/learn-HTML.html" class="doc-link">Html Guides</a>
+                    </li>
+                    <li class="doc-item">
+                        <a href="/posts/learn-CSS.html" class="doc-link">CSS Guides</a>
+                    </li>
+                    <li class="doc-item">
+                        <a href="/posts/learn-JavaScript.html" class="doc-link">JavaScript Guides</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+
+    </div>
+
     <!--FOOTER SECTION-->
 <footer>
 
@@ -21,10 +390,10 @@
     <ul class="ul">
     
         <li class="li">
-        <a href="index.html" class="links">home</a>
+        <a href="/index.html" class="links">home</a>
         </li>
         <li class="li">
-        <a href="about.html" class="links">about</a>
+        <a href="/about.html" class="links">about</a>
         </li>
         <li class="li">
         <a href="/posts/learn-HTML.html" class="links">blog</a>
@@ -43,6 +412,7 @@
     </div>
     </footer>
     <script src="/script.js"></script>
+    <script src="/assets/js/test.js"></script>
 
-</body>
+    </body>
 </html>

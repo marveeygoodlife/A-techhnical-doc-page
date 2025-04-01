@@ -10,16 +10,17 @@
     </head>
     <body>
     <!--HEADER SECTION-->
-<header>
+<header class="main-header">
     <div>
     <div class="logo-div">
         <p>My Tech Blog</p>
     <!-- <img src="" alt="MY-LOGO" class="logo">
      -->
     </div>
+    <button type="button" class="togglebtn">mode</button>
     </div>
     <!-- navbar -->
-    <nav class="navbar">
+    <nav class="navbar mainNav">
     <div>
     <button type="button" class="closeBtn"> x </button>
     </div>
@@ -46,8 +47,37 @@
         <span class="bars"></span></button>
     </div>
     </header>
-    <main>
-        <h1>HTML FOR BEGINNERS: A Deep Dive into the Backbone of the Web
+
+
+    <div class="main-wrapper">
+        <div class="sidebar-container">
+            <aside id="aside-links" class="sidebar-left" aria-label="left-aside">
+                <nav aria-label="Quick Guides" class="sidebar-nav">
+                    <div class="inner-aside-left">
+                            <div class="document-links-container">
+                                <section class="document-section">
+                                    <header class="aside-header">
+                                        <h2>Quick Guides</h2>
+                                    </header>
+                                    <ul class="doc-list-items">
+                                        <li class="doc-item"><a   class="doc-link" href="#">item 1</a></li>
+                                        <li class="doc-item"><a   class="doc-link" href="#">item 2</a></li>
+                                        <li class="doc-item"><a   class="doc-link" href="#">item 3</a></li>
+                                        <li class="doc-item"><a   class="doc-link" href="#">item 4</a></li>
+                                        <li class="doc-item"><a   class="doc-link" href="#">item 5</a></li>
+                                        <li class="doc-item"><a   class="doc-link" href="#">item 6</a></li>
+                                    </ul>
+                                </section>
+                            </div>
+                    </div>
+                </nav>
+            </aside>
+        </div>
+      <!-- =========
+       Main Content
+      =============-->
+      <main class="main">
+        <h1 class="mainh1">HTML FOR BEGINNERS: A Deep Dive into the Backbone of the Web
         </h1>
         <!-- First section -->
         <section class="sectionA">
@@ -134,18 +164,18 @@
                     Every HTML document follow a simple <strong>hierachy:</strong>
                 </p>
                 <ol>
-                    <ul>
+                    <li>
                         <strong>The !DOCTYPE Declaration - </strong> Tells the browser it's an HTML5 document.
-                    </ul>
-                    <ul>
+                    </li>
+                    <li>
                         <strong>The &lt;html&gt; Element - </strong> Is the root of the document.
-                    </ul>
-                    <ul>
+                    </li>
+                    <li>
                         <strong>The &lt;headgt;section - </strong> Contains the page metadata such as the title and css link.
-                    </ul>
-                    <ul>
+                    </li>
+                    <li>
                         <strong>The &lt;body&gt; Section -</strong> Holds every other contents of the page.
-                    </ul>
+                    </li>
                 </ol>
                 <p><strong>Example of a full HTML Document:</strong></p>
 
@@ -325,6 +355,32 @@
                 </article>
             </section>
     </main>
+
+    <!-- sidebar - right- docs -->
+            
+    <aside id="docs" class="sidebar-right">
+        <nav>
+            <div class="document links-container">
+                <header class="aside-header">
+                    <h2>More Article</h2>
+                </header>
+                <ul class="doc-quicklinks">
+                    <li class="doc-item">
+                        <a href="/posts/learn-HTML.html" class="doc-link">Html Guides</a>
+                    </li>
+                    <li class="doc-item">
+                        <a href="/posts/learn-CSS.html" class="doc-link">CSS Guides</a>
+                    </li>
+                    <li class="doc-item">
+                        <a href="/posts/learn-JavaScript.html" class="doc-link">JavaScript Guides</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+
+    </div>
+
     <!--FOOTER SECTION-->
 <footer>
 
